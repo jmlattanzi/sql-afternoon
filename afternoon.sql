@@ -55,7 +55,7 @@ insert into Orders(PersonID, ProductName, ProductPrice, Quantity)
 
 select * from Orders;
 select sum(quantity) from Orders ;
-select sum(ProductPrice * quantity) from Orders
+select sum(ProductPrice * quantity) from Orders;
 select sum(ProductPrice * quantity) from Orders where PersonID = 234;
 
 insert into Artist(name) values('Warbringer');
@@ -69,7 +69,7 @@ select * from artist order by name asc limit 5;
 select * from artist where name like 'Black%';
 select * from artist where name like '%Black%';
 
-select * from employee where city = 'Calgary'
+select * from employee where city = 'Calgary';
 select first_name, last_name, max(birth_date) from employee;
 select first_name, last_name, min(birth_date) from employee;
 select * from employee where reports_to = 2;
@@ -81,5 +81,5 @@ select min(total) from invoice;
 select * from invoice where total > 5;
 select count(total) from invoice where total < 5;
 select * from invoice where billing_state in ('CA', 'TX', 'AZ');
-select avg(total) from invoice
-select sum(total) from invoice
+select avg(total) from invoice;
+select sum(total) from invoice;
